@@ -1,5 +1,22 @@
 <resources>
     <string name="app_name">MarinaIndustri</string>
+
     <string name="marina">Marina</string>
     <string name="industri">Industri</string>
+    <string name="selamat_datang">Selamat Datang!</string>
+    <string name="username">Username</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="daftar_u"><u>Daftar</u></string>
+    <string name="daftar">Daftar</string>
+    <string name="masuk_u"><u>Masuk</u></string>
+    <string name="masuk">Masuk</string>
+    <string name="lewati">Lewati</string>
+
+    <string name="registrasi">Registrasi</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_tengah">Nama Tengah (opsional)</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="alamat">Alamat</string>
+    <string name="no_telepon">No.Telepon</string>
+    <string name="email">E-mail</string>
 </resources>

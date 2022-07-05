@@ -16,11 +16,11 @@
         android:textSize="82sp"
         android:textAllCaps="true"
         android:textColor="@color/lazydog"
+        app:layout_constraintVertical_bias="0.450"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.450"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/splshIndustri"
@@ -31,10 +31,10 @@
         android:textSize="45sp"
         android:textColor="@color/lazydog"
         android:letterSpacing="0.1"
+        app:layout_constraintVertical_bias="0.540"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.540"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
