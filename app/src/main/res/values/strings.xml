@@ -19,4 +19,10 @@
     <string name="alamat">Alamat</string>
     <string name="no_telepon">No.Telepon</string>
     <string name="email">E-mail</string>
+
+    <string name="teks">Selamat Registrasi\nAkun Anda\nBerhasil!</string>
+    <string name="jalan">Jl. Diponegoro ...</string>
+    <string name="beranda">Beranda</string>
+    <string name="makaroni">Makaroni</string>
+    <string name="kategori">Kategori</string>
 </resources>
