@@ -309,15 +309,14 @@
                     app:layout_constraintBottom_toBottomOf="@+id/Kat3"
                     app:layout_constraintEnd_toEndOf="@+id/Kat3"
                     app:layout_constraintStart_toStartOf="@+id/Kat3"
-                    app:layout_constraintTop_toTopOf="@+id/Kat3" />
+                    app:layout_constraintTop_toTopOf="@+id/Kat3"
+                    tools:ignore="TextContrastCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="24dp"
-                android:paddingEnd="24dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="0dp">
 
@@ -326,7 +325,7 @@
                     android:layout_width="25dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_star_populer"
-                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintHorizontal_bias="0"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -334,16 +333,32 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/populer"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp"
                     android:fontFamily="@font/poppins_medium"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/populer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@+id/Star"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/lihat_semua"
+                    android:textColor="@color/maroon"
+                    android:textSize="16sp"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -370,7 +385,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/img_2"
-                        tools:ignore="SpeakableTextPresentCheck" />
+                        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -391,7 +406,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/img_3"
-                        tools:ignore="SpeakableTextPresentCheck" />
+                        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -435,7 +450,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/img_2"
-                        tools:ignore="SpeakableTextPresentCheck" />
+                        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
                 </androidx.cardview.widget.CardView>
 
