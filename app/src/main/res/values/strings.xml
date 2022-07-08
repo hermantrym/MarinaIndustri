@@ -25,4 +25,10 @@
     <string name="beranda">Beranda</string>
     <string name="makaroni">Makaroni</string>
     <string name="kategori">Kategori</string>
+    <string name="juli">Juli</string>
+    <string name="opak">Opak</string>
+    <string name="emping">Emping</string>
+    <string name="kacang">Kacang</string>
+    <string name="cipir">Cipir</string>
+    <string name="populer">Populer</string>
 </resources>
