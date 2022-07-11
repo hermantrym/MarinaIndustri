@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MarinaIndustri</string>
 
     <string name="marina">Marina</string>
@@ -21,7 +21,7 @@
     <string name="email">E-mail</string>
 
     <string name="teks">Selamat Registrasi\nAkun Anda\nBerhasil!</string>
-    <string name="jalan">Jl. Diponegoro ...</string>
+    <string name="jalan">Jl. Diponegoro …</string>
     <string name="beranda">Beranda</string>
     <string name="makaroni">Makaroni</string>
     <string name="kategori">Kategori</string>
@@ -30,6 +30,26 @@
     <string name="emping">Emping</string>
     <string name="kacang">Kacang</string>
     <string name="cipir">Cipir</string>
-    <string name="populer">Populer</string>
+    <string name="populer" tools:ignore="Typos">Populer</string>
     <string name="lihat_semua">Lihat Semua</string>
+
+    <string name="rp_2_500">Rp. 2.500</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis purus dolor, eget convallis lorem interdum non. Suspendisse fringilla nisl lacinia sapien dignissim tincidunt.</string>
+    <string name="beli_sekarang">Beli Sekarang</string>
+
+    <string name="keranjang">Keranjang</string>
+    <string name="pilih_semua">Pilih Semua</string>
+    <string name="hapus">Hapus</string>
+    <string name="kapri_hijau">Kapri Hijau</string>
+    <string name="kedelai_bangkok">Kedelai Bangkok</string>
+    <string name="kacang_mix">Kacang Mix</string>
+    <string name="potato">Potato</string>
+    <string name="total_harga">Total Harga</string>
+    <string name="bayar">Bayar</string>
+    <string name="rp_36_000">Rp. 36.000</string>
+    <string name="rp_6_000">Rp. 6.000</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
 </resources>

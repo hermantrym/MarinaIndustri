@@ -145,7 +145,7 @@
                     app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintStart_toEndOf="@+id/Search"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -427,8 +427,8 @@
                     <androidx.constraintlayout.utils.widget.ImageFilterButton
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_3"
-                        tools:ignore="SpeakableTextPresentCheck" />
+                        android:src="@drawable/img_4"
+                        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -449,7 +449,7 @@
                     <androidx.constraintlayout.utils.widget.ImageFilterButton
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_2"
+                        android:src="@drawable/img_5"
                         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
                 </androidx.cardview.widget.CardView>
