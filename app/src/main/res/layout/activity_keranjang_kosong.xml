@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lazydog"
+    tools:context=".KeranjangKosongActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keranjang"
+        android:textColor="@color/maroon"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/CartEmpty"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_cart_empty"
+        app:layout_constraintVertical_bias=".4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keranjang_kosong"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintHorizontal_bias=".67"
+        app:layout_constraintTop_toTopOf="@+id/CartEmpty"
+        app:layout_constraintBottom_toBottomOf="@+id/CartEmpty"
+        app:layout_constraintStart_toStartOf="@+id/CartEmpty"
+        app:layout_constraintEnd_toEndOf="@+id/CartEmpty"/>
+
+    <ImageView
+        android:id="@+id/BtnBeli"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_btn_rounded"
+        android:layout_marginTop="25dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintTop_toBottomOf="@+id/CartEmpty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beli"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:letterSpacing=".1"
+        app:layout_constraintTop_toTopOf="@+id/BtnBeli"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnBeli"
+        app:layout_constraintStart_toStartOf="@+id/BtnBeli"
+        app:layout_constraintEnd_toEndOf="@+id/BtnBeli"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/NavHome"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
+                android:src="@drawable/ic_nav_home"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/NavCart"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
+                android:src="@drawable/ic_nav_cart_active"
+                android:layout_marginStart="72dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/NavHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/NavNotification"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
+                android:src="@drawable/ic_nav_notification"
+                android:layout_marginStart="72dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/NavCart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/NavProfile"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
+                android:src="@drawable/ic_nav_profile"
+                android:layout_marginStart="72dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/NavNotification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

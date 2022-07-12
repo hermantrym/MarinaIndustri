@@ -52,4 +52,23 @@
     <string name="_2">2</string>
     <string name="_1">1</string>
     <string name="_3">3</string>
+    <string name="keranjang_kosong">Keranjang\nKosong</string>
+    <string name="beli">Beli</string>
+    <string name="checkout">Checkout</string>
+    <string name="dikirim_ke_rumah">Dikirim ke : Rumah</string>
+    <string name="jl_diponegoro">Jl. Diponegoro</string>
+    <string name="edit">edit</string>
+    <string name="pilih_nomor_rekening">Pilih nomor rekening</string>
+    <string name="copy">copy</string>
+    <string name="bri">Bri</string>
+    <string name="_23423_32263_35224">23423 32263 35224</string>
+    <string name="bca">Bca</string>
+    <string name="_56563_32263">56563 32263</string>
+    <string name="total">Total</string>
+    <string name="bukti_pembayaran">Bukti Pembayaran</string>
+    <string name="_empty">...</string>
+    <string name="unggah">Unggah</string>
+    <string name="kirim">Kirim</string>
+    <string name="pemesanan_telah_berhasil_nterima_kasih">Pemesanan Telah Berhasil\nTerima Kasih</string>
+    <string name="notifikasi">Notifikasi</string>
 </resources>
