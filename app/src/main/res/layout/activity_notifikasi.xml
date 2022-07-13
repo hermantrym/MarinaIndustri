@@ -42,6 +42,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/ic_select_all_rectangle"
+            android:layout_marginStart="10dp"
             app:layout_constraintVertical_bias=".7"
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -54,11 +55,10 @@
             android:id="@+id/PilihSemua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/poppins_regular"
             android:text="@string/pilih_semua"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold"
             android:layout_marginStart="15dp"
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintBottom_toBottomOf="@+id/rectHeader"
@@ -67,19 +67,20 @@
             app:layout_constraintTop_toTopOf="@+id/rectHeader" />
 
         <ImageView
+            android:id="@+id/pesan"
             android:layout_width="30dp"
             android:layout_height="22dp"
             android:src="@drawable/ic_read"
             android:layout_marginEnd="35dp"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintBottom_toBottomOf="@id/rectHeader"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/hapus"
             app:layout_constraintStart_toEndOf="@id/PilihSemua"
             app:layout_constraintTop_toTopOf="@id/rectHeader"
             tools:ignore="ContentDescription" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/hapus"
             android:layout_width="20dp"
             android:layout_height="22dp"
             android:src="@drawable/ic_trash"
@@ -109,19 +110,288 @@
             android:layout_height="wrap_content"
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"  
             android:layout_marginBottom="30dp">
 
             <ImageView
-                android:id="@+id/Rect1"
+                android:id="@+id/Rectangle"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/ic_rectangle_keranjang_bg"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                tools:ignore="ImageContrastCheck,ContentDescription" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/Select"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_select_all_rectangle"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/Rectangle"
+                app:layout_constraintTop_toTopOf="@id/Rectangle"
+                app:layout_constraintVertical_bias=".5"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/Teks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promo_paket_hemat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="15dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="@id/Rectangle"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle"
+                app:layout_constraintStart_toEndOf="@id/Select"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hari_ini"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintTop_toTopOf="@id/Rectangle"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle"
+                app:layout_constraintStart_toEndOf="@id/Teks"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle"/>
+
+            <ImageView
+                android:id="@+id/Rectangle1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_rectangle_keranjang_bg"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Rectangle"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/Select1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_select_all_rectangle"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle1"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle1"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/Rectangle1"
+                app:layout_constraintTop_toTopOf="@id/Rectangle1"
+                app:layout_constraintVertical_bias=".5"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/Teks1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promo_idul_adha"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="15dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="@id/Rectangle1"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle1"
+                app:layout_constraintStart_toEndOf="@id/Select1"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_minggu_lalu"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintTop_toTopOf="@id/Rectangle1"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle1"
+                app:layout_constraintStart_toEndOf="@id/Teks1"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle1"/>
+
+            <ImageView
+                android:id="@+id/Rectangle2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_rectangle_keranjang_bg"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Rectangle1"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/Select2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_select_all_rectangle"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle2"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle2"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/Rectangle2"
+                app:layout_constraintTop_toTopOf="@id/Rectangle2"
+                app:layout_constraintVertical_bias=".5"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/Teks2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promo_idul_fitri"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="15dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="@id/Rectangle2"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle2"
+                app:layout_constraintStart_toEndOf="@id/Select2"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_5_minggu_lalu"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintTop_toTopOf="@id/Rectangle2"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle2"
+                app:layout_constraintStart_toEndOf="@id/Teks2"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle2"/>
+
+            <ImageView
+                android:id="@+id/Rectangle3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_rectangle_keranjang_bg"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Rectangle2"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/Select3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_select_all_rectangle"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle3"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle3"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/Rectangle3"
+                app:layout_constraintTop_toTopOf="@id/Rectangle3"
+                app:layout_constraintVertical_bias=".5"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/Teks3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promo_bulan_ramadhan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="15dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="@id/Rectangle3"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle3"
+                app:layout_constraintStart_toEndOf="@id/Select3"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_7_minggu_lalu"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintTop_toTopOf="@id/Rectangle3"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle3"
+                app:layout_constraintStart_toEndOf="@id/Teks3"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle3"/>
+
+            <ImageView
+                android:id="@+id/Rectangle4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_rectangle_keranjang_bg"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Rectangle3"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/Select4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_select_all_rectangle"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle4"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle4"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/Rectangle4"
+                app:layout_constraintTop_toTopOf="@id/Rectangle4"
+                app:layout_constraintVertical_bias=".5"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/Teks4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promo_natal_amp_akhir_tahun"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="15dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="@id/Rectangle4"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle4"
+                app:layout_constraintStart_toEndOf="@id/Select4"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_7_minggu_lalu"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintTop_toTopOf="@id/Rectangle4"
+                app:layout_constraintBottom_toBottomOf="@id/Rectangle4"
+                app:layout_constraintStart_toEndOf="@id/Teks4"
+                app:layout_constraintEnd_toEndOf="@id/Rectangle4"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

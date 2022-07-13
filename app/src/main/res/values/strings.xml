@@ -20,18 +20,18 @@
     <string name="no_telepon">No.Telepon</string>
     <string name="email">E-mail</string>
 
-    <string name="teks">Selamat Registrasi\nAkun Anda\nBerhasil!</string>
-    <string name="jalan">Jl. Diponegoro …</string>
-    <string name="beranda">Beranda</string>
-    <string name="makaroni">Makaroni</string>
-    <string name="kategori">Kategori</string>
-    <string name="juli">Juli</string>
-    <string name="opak">Opak</string>
-    <string name="emping">Emping</string>
-    <string name="kacang">Kacang</string>
-    <string name="cipir">Cipir</string>
+    <string name="teks" tools:ignore="Typos">Selamat Registrasi\nAkun Anda\nBerhasil!</string>
+    <string name="jalan" tools:ignore="Typos">Jl. Diponegoro …</string>
+    <string name="beranda" tools:ignore="Typos">Beranda</string>
+    <string name="makaroni" tools:ignore="Typos">Makaroni</string>
+    <string name="kategori" tools:ignore="Typos">Kategori</string>
+    <string name="juli" tools:ignore="Typos">Juli</string>
+    <string name="opak" tools:ignore="Typos">Opak</string>
+    <string name="emping" tools:ignore="Typos">Emping</string>
+    <string name="kacang" tools:ignore="Typos">Kacang</string>
+    <string name="cipir" tools:ignore="Typos">Cipir</string>
     <string name="populer" tools:ignore="Typos">Populer</string>
-    <string name="lihat_semua">Lihat Semua</string>
+    <string name="lihat_semua" tools:ignore="Typos">Lihat Semua</string>
 
     <string name="rp_2_500">Rp. 2.500</string>
     <string name="deskripsi">Deskripsi</string>
@@ -52,8 +52,10 @@
     <string name="_2">2</string>
     <string name="_1">1</string>
     <string name="_3">3</string>
+
     <string name="keranjang_kosong">Keranjang\nKosong</string>
     <string name="beli">Beli</string>
+
     <string name="checkout">Checkout</string>
     <string name="dikirim_ke_rumah">Dikirim ke : Rumah</string>
     <string name="jl_diponegoro">Jl. Diponegoro</string>
@@ -66,9 +68,23 @@
     <string name="_56563_32263">56563 32263</string>
     <string name="total">Total</string>
     <string name="bukti_pembayaran">Bukti Pembayaran</string>
-    <string name="_empty">...</string>
+    <string name="_empty">…</string>
     <string name="unggah">Unggah</string>
     <string name="kirim">Kirim</string>
+
     <string name="pemesanan_telah_berhasil_nterima_kasih">Pemesanan Telah Berhasil\nTerima Kasih</string>
+
     <string name="notifikasi">Notifikasi</string>
+    <string name="promo_paket_hemat">Promo Paket Hemat</string>
+    <string name="hari_ini">Hari ini</string>
+    <string name="_1_minggu_lalu">1 minggu lalu</string>
+    <string name="promo_idul_adha">Promo Idul Adha</string>
+    <string name="promo_idul_fitri">Promo Idul Fitri</string>
+    <string name="_5_minggu_lalu">5 minggu lalu</string>
+    <string name="promo_bulan_ramadhan">Promo Bulan Ramadhan</string>
+    <string name="_7_minggu_lalu">7 minggu lalu</string>
+    <string name="promo_natal_amp_akhir_tahun"><![CDATA[Promo Natal & Akhir Tahun]]></string>
+
+    <string name="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="cek_sekarang">Cek Sekarang</string>
 </resources>

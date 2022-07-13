@@ -54,11 +54,10 @@
             android:id="@+id/PilihSemua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/poppins_regular"
             android:text="@string/pilih_semua"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold"
             android:layout_marginStart="15dp"
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintBottom_toBottomOf="@+id/rectHeader"
@@ -69,11 +68,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/poppins_regular"
             android:text="@string/hapus"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintBottom_toBottomOf="@+id/PilihSemua"
             app:layout_constraintEnd_toEndOf="parent"
@@ -83,10 +81,11 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
+        android:id="@+id/Scroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scrollbars="none"
-        app:layout_constraintHeight_percent=".75"
+        app:layout_constraintHeight_percent=".655"
         app:layout_constraintVertical_bias="0"
         app:layout_constraintBottom_toTopOf="@+id/Navigation"
         app:layout_constraintStart_toStartOf="parent"
@@ -442,72 +441,86 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="ContentDescription"/>
 
-            <TextView
-                android:id="@+id/TotalHarga"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/total_harga"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppins_bold"
-                android:layout_marginTop="50dp"
-                app:layout_constraintVertical_bias="0"
-                app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintTop_toBottomOf="@+id/Select3"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-
-            <TextView
-                android:id="@+id/Total"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/rp_36_000"
-                android:textSize="18sp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppins_bold"
-                android:layout_marginTop="-6dp"
-                app:layout_constraintVertical_bias="0"
-                app:layout_constraintHorizontal_bias=".5"
-                app:layout_constraintTop_toBottomOf="@+id/TotalHarga"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/TotalHarga"
-                app:layout_constraintEnd_toEndOf="@+id/TotalHarga"/>
-
-            <ImageView
-                android:id="@+id/btnBeli"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_btn_rounded"
-                app:layout_constraintVertical_bias=".5"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintTop_toTopOf="@+id/TotalHarga"
-                app:layout_constraintBottom_toBottomOf="@+id/Total"
-                app:layout_constraintStart_toEndOf="@+id/TotalHarga"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:ignore="ContentDescription"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/bayar"
-                android:textSize="22sp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textAllCaps="true"
-                android:fontFamily="@font/poppins_medium"
-                app:layout_constraintVertical_bias=".5"
-                app:layout_constraintHorizontal_bias=".5"
-                app:layout_constraintTop_toTopOf="@+id/btnBeli"
-                app:layout_constraintBottom_toBottomOf="@+id/btnBeli"
-                app:layout_constraintStart_toStartOf="@+id/btnBeli"
-                app:layout_constraintEnd_toEndOf="@+id/btnBeli"/>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BarTotal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/Scroll"
+        app:layout_constraintBottom_toTopOf="@id/Navigation"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/TotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_harga"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="@id/btnBeli"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rp_36_000"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="33dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/TotalHarga"
+            app:layout_constraintEnd_toEndOf="@+id/TotalHarga"/>
+
+        <ImageView
+            android:id="@+id/btnBeli"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_btn_rounded"
+            app:layout_constraintVertical_bias=".5"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TotalHarga"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bayar"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintVertical_bias=".5"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintTop_toTopOf="@+id/btnBeli"
+            app:layout_constraintBottom_toBottomOf="@+id/btnBeli"
+            app:layout_constraintStart_toStartOf="@+id/btnBeli"
+            app:layout_constraintEnd_toEndOf="@+id/btnBeli"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Navigation"
