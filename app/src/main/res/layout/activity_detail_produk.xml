@@ -122,8 +122,8 @@
 
         <ImageView
             android:id="@+id/btnCart"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
             android:src="@drawable/ic_cart_detail"
             android:layout_marginTop="40dp"
             app:layout_constraintVertical_bias="0"
@@ -136,8 +136,8 @@
 
         <ImageView
             android:id="@+id/btnBeliSkrg"
-            android:layout_width="280dp"
-            android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:layout_height="38dp"
             android:src="@drawable/ic_btn_rounded"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintBottom_toBottomOf="@+id/btnCart"
@@ -150,11 +150,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
-            android:letterSpacing=".06"
+            android:letterSpacing=".04"
             android:text="@string/beli_sekarang"
             android:textAllCaps="true"
             android:textColor="@color/lazydog"
-            android:textSize="22sp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/btnBeliSkrg"
             app:layout_constraintTop_toTopOf="@+id/btnBeliSkrg"
             app:layout_constraintStart_toStartOf="@+id/btnBeliSkrg"

@@ -100,4 +100,8 @@
     <string name="keluar">Keluar</string>
     <string name="magdarini">Magdarini</string>
     <string name="u0040magdarini">\@magdarini</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="simpan">simpan</string>
+
+    <string name="lorem2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</string>
 </resources>

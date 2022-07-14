@@ -54,8 +54,8 @@
 
     <ImageView
         android:id="@+id/BtnMasuk"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="90dp"
+        android:layout_height="38dp"
         android:src="@drawable/ic_btn_rounded"
         android:layout_marginTop="20dp"
         app:layout_constraintVertical_bias="0"
@@ -69,9 +69,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/masuk"
-        android:textSize="22sp"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textAllCaps="true"
+        android:letterSpacing=".04"
         android:fontFamily="@font/poppins_medium"
         app:layout_constraintTop_toTopOf="@id/BtnMasuk"
         app:layout_constraintBottom_toBottomOf="@id/BtnMasuk"

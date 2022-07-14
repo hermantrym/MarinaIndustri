@@ -9,12 +9,16 @@
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/corners.xml" value="0.1305" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/edit_text_bg.xml" value="0.143" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/filter_background.xml" value="0.1305" />
+        <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_alert_notification.xml" value="0.133" />
+        <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_back_button.xml" value="0.133" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_border_description.xml" value="0.133" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_border_rounded.xml" value="0.133" />
+        <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_broder_bg_round_lefttop.xml" value="0.133" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_btn_rounded.xml" value="0.133" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_cart.xml" value="0.1305" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_cart_detail.xml" value="0.133" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_filter.xml" value="0.1305" />
+        <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_increase.xml" value="0.133" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_kategori_bg.xml" value="0.1305" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_kategori_ex_bg.xml" value="0.1305" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/drawable/ic_logout.xml" value="0.133" />
@@ -43,6 +47,8 @@
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/layout/activity_notifikasi.xml" value="0.27291666666666664" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/layout/activity_notifikasi_detail.xml" value="0.25" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/layout/activity_notifikasi_kosong.xml" value="0.30885416666666665" />
+        <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/layout/activity_profil_alamat.xml" value="0.30885416666666665" />
+        <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/layout/activity_profil_edit.xml" value="0.33" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/layout/activity_profile.xml" value="0.33" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/layout/activity_splashscreen.xml" value="0.27291666666666664" />
         <entry key="..\:/herman/src/MarinaIndustri/app/src/main/res/layout/masuk_tab_fragment.xml" value="0.16" />
