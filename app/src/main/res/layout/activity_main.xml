@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/splshMarina"
+        android:id="@+id/SplMarina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/minionpro_bold"
@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/splshIndustri"
+        android:id="@+id/SplIndustri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/minionpro_bold"
