@@ -106,6 +106,7 @@
                 app:layout_constraintEnd_toEndOf="@id/Nama" />
 
             <ImageView
+                android:id="@+id/EditProfil"
                 android:layout_width="26dp"
                 android:layout_height="23dp"
                 android:src="@drawable/ic_edit"
@@ -147,6 +148,7 @@
                 tools:ignore="ContentDescription"/>
 
             <TextView
+                android:id="@+id/Alamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/alamat"

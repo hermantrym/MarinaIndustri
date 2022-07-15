@@ -490,7 +490,7 @@
             app:layout_constraintEnd_toEndOf="@+id/TotalHarga"/>
 
         <ImageView
-            android:id="@+id/btnBeli"
+            android:id="@+id/BtnBayar"
             android:layout_width="220dp"
             android:layout_height="38dp"
             android:src="@drawable/ic_btn_rounded"
@@ -503,6 +503,7 @@
             tools:ignore="ContentDescription"/>
 
         <TextView
+            android:id="@+id/TeksBayar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bayar"
@@ -512,10 +513,10 @@
             android:fontFamily="@font/poppins_medium"
             app:layout_constraintVertical_bias=".5"
             app:layout_constraintHorizontal_bias=".5"
-            app:layout_constraintTop_toTopOf="@+id/btnBeli"
-            app:layout_constraintBottom_toBottomOf="@+id/btnBeli"
-            app:layout_constraintStart_toStartOf="@+id/btnBeli"
-            app:layout_constraintEnd_toEndOf="@+id/btnBeli"/>
+            app:layout_constraintTop_toTopOf="@+id/BtnBayar"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnBayar"
+            app:layout_constraintStart_toStartOf="@+id/BtnBayar"
+            app:layout_constraintEnd_toEndOf="@+id/BtnBayar"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

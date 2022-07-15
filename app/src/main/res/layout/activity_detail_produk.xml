@@ -29,7 +29,7 @@
             tools:ignore="ContentDescription" />
 
         <ImageView
-            android:id="@+id/btnBack"
+            android:id="@+id/BtnBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="15dp"
@@ -135,7 +135,7 @@
             tools:ignore="Contentdescription"/>
 
         <ImageView
-            android:id="@+id/btnBeliSkrg"
+            android:id="@+id/BtnBeliSkrg"
             android:layout_width="300dp"
             android:layout_height="38dp"
             android:src="@drawable/ic_btn_rounded"
@@ -147,6 +147,7 @@
             tools:ignore="ContentDescription"/>
 
         <TextView
+            android:id="@+id/TeksBeliSkrg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
@@ -155,10 +156,10 @@
             android:textAllCaps="true"
             android:textColor="@color/lazydog"
             android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/btnBeliSkrg"
-            app:layout_constraintTop_toTopOf="@+id/btnBeliSkrg"
-            app:layout_constraintStart_toStartOf="@+id/btnBeliSkrg"
-            app:layout_constraintEnd_toEndOf="@+id/btnBeliSkrg"/>
+            app:layout_constraintBottom_toBottomOf="@+id/BtnBeliSkrg"
+            app:layout_constraintTop_toTopOf="@+id/BtnBeliSkrg"
+            app:layout_constraintStart_toStartOf="@+id/BtnBeliSkrg"
+            app:layout_constraintEnd_toEndOf="@+id/BtnBeliSkrg"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

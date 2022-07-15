@@ -14,7 +14,7 @@
         android:paddingEnd="24dp">
 
         <ImageView
-            android:id="@+id/btnBack"
+            android:id="@+id/BtnBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="24dp"
@@ -39,8 +39,8 @@
             android:textStyle="bold"
             app:layout_constraintVertical_bias=".5"
             app:layout_constraintHorizontal_bias=".5"
-            app:layout_constraintTop_toTopOf="@+id/btnBack"
-            app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="@+id/BtnBack"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnBack"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 

@@ -116,6 +116,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/Rect1"/>
 
             <TextView
+                android:id="@+id/BtnEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/edit"
@@ -216,7 +217,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/Rect2"/>
 
             <TextView
-                android:id="@+id/NoRek2"
+                android:id="@+id/NoRek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_23423_32263_35224"
@@ -245,7 +246,7 @@
                 app:layout_constraintHorizontal_bias="1"
                 app:layout_constraintTop_toTopOf="@+id/Rect2"
                 app:layout_constraintBottom_toBottomOf="@id/Rect2"
-                app:layout_constraintStart_toEndOf="@id/NoRek2"
+                app:layout_constraintStart_toEndOf="@id/NoRek"
                 app:layout_constraintEnd_toEndOf="@id/Rect2"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -316,7 +317,7 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
-                android:id="@+id/NoRek3"
+                android:id="@+id/NoRek1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_56563_32263"
@@ -340,7 +341,7 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="10dp"
                 app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toEndOf="@id/NoRek3"
+                app:layout_constraintStart_toEndOf="@id/NoRek1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/LogoBg"
                 app:layout_constraintBottom_toBottomOf="@id/LogoBg"/>
@@ -447,7 +448,7 @@
             app:layout_constraintEnd_toEndOf="@id/btnUnggah" />
 
         <ImageView
-            android:id="@+id/btnKirim"
+            android:id="@+id/BtnKirim"
             android:layout_width="match_parent"
             android:layout_height="38dp"
             android:src="@drawable/ic_btn_rounded"
@@ -460,6 +461,7 @@
             tools:ignore="ContentDescription"/>
 
         <TextView
+            android:id="@+id/TeksKirim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/kirim"
@@ -468,10 +470,10 @@
             android:textAllCaps="true"
             android:letterSpacing=".04"
             android:fontFamily="@font/poppins_medium"
-            app:layout_constraintTop_toTopOf="@id/btnKirim"
-            app:layout_constraintBottom_toBottomOf="@id/btnKirim"
-            app:layout_constraintStart_toStartOf="@id/btnKirim"
-            app:layout_constraintEnd_toEndOf="@id/btnKirim"/>
+            app:layout_constraintTop_toTopOf="@id/BtnKirim"
+            app:layout_constraintBottom_toBottomOf="@id/BtnKirim"
+            app:layout_constraintStart_toStartOf="@id/BtnKirim"
+            app:layout_constraintEnd_toEndOf="@id/BtnKirim"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
