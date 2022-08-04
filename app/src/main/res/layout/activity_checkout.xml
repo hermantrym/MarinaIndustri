@@ -368,7 +368,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rp_36_000"
+            android:text="@string/rp_43_000"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="16sp"

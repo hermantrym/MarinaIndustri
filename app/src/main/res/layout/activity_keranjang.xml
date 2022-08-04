@@ -457,36 +457,51 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <ImageView
+            android:id="@+id/Rect"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_rectangle_keranjang_bg"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/BtnBayar"
+            app:layout_constraintTop_toTopOf="@id/BtnBayar"
+            app:layout_constraintBottom_toBottomOf="@id/BtnBayar"
+            tools:ignore="ImageContrastCheck,ContentDescription" />
+
         <TextView
             android:id="@+id/TotalHarga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/total_harga"
+            android:text="@string/rp_36_000"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:letterSpacing=".05"
             android:fontFamily="@font/poppins_bold"
-            android:layout_marginTop="10dp"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="@id/Rect"
+            app:layout_constraintStart_toStartOf="@id/Rect"
+            app:layout_constraintEnd_toEndOf="@id/Rect" />
+
+        <ImageView
+            android:id="@+id/LogoOngkir"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_shipping_truck_success"
+            app:layout_constraintTop_toTopOf="@id/Ongkir"
+            app:layout_constraintBottom_toBottomOf="@id/Ongkir"
+            app:layout_constraintStart_toStartOf="@id/TotalHarga"
+            tools:ignore="ContentDescription"/>
 
         <TextView
-            android:id="@+id/Total"
+            android:id="@+id/Ongkir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rp_36_000"
-            android:textSize="18sp"
-            android:textColor="@color/black"
+            android:text="@string/rp_7_000"
+            android:textColor="@color/maroon"
             android:fontFamily="@font/poppins_bold"
             android:layout_marginTop="33dp"
             app:layout_constraintVertical_bias="0"
-            app:layout_constraintHorizontal_bias=".5"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/TotalHarga"
             app:layout_constraintEnd_toEndOf="@+id/TotalHarga"/>
 
         <ImageView

@@ -104,4 +104,6 @@
     <string name="simpan">simpan</string>
 
     <string name="lorem2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</string>
+    <string name="rp_7_000">Rp. 7.000</string>
+    <string name="rp_43_000">Rp. 43.000</string>
 </resources>
